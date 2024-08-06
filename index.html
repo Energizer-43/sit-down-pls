@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SitDownPls</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/icons/favicon.png" type="image/png" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"
+    ></script>
+    <script defer src="./js/index.bundle.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__top header-top line-1">
+        <div class="header-top__select-region">
+          <span class="header-top__region">Ваш регион:</span>
+          <div class="header-top__dropdown">
+            <select class="header-top__select" name="city">
+              <option value="moscow">Москва</option>
+              <option value="kazan">Казань</option>
+              <option value="ufa">Уфа</option>
+              <option value="perm">Пермь</option>
+            </select>
+          </div>
+        </div>
+        <a
+          class="header-top__link-phone"
+          aria-label="Телефон магазина +74958854547"
+          href="tel:+74958854547"
+        >
+          <svg
+            class="header-top__svg"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.3425 14.0983C17.215 14.0983 16.1242 13.915 15.1067 13.585C14.7858 13.475 14.4283 13.5575 14.1808 13.805L12.7417 15.6108C10.1475 14.3733 7.71833 12.0358 6.42583 9.35L8.21333 7.82833C8.46083 7.57167 8.53417 7.21417 8.43333 6.89333C8.09417 5.87583 7.92 4.785 7.92 3.6575C7.92 3.1625 7.5075 2.75 7.0125 2.75H3.84083C3.34583 2.75 2.75 2.97 2.75 3.6575C2.75 12.1733 9.83583 19.25 18.3425 19.25C18.9933 19.25 19.25 18.6725 19.25 18.1683V15.0058C19.25 14.5108 18.8375 14.0983 18.3425 14.0983Z"
+              fill="#FF862F"
+            />
+          </svg>
+          +7 (495) 885-45-47
+        </a>
+        <nav
+          class="header-top__nav"
+          id="burger-menu2"
+          data-da=".line-2,1250,first"
+        >
+          <div class="header-top__mobile-container">
+            <ul class="header-top__list">
+              <li class="header-top__item">
+                <a class="header-top__link" href="#!">О&nbsp;компании</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#!"
+                  >Гарантия и&nbsp;возврат</a
+                >
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#!">Корпоративным клиентам</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#!">Дизайн-решение</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header__top line-2">
+        <div class="header-bottom__user tablet">
+          <a class="header-bottom__link-user" href="#!">
+            <svg
+              class="header-bottom__svg-user"
+              width="26"
+              height="28"
+              viewBox="0 0 26 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.98 22.8503C24.3278 21.2785 23.3813 19.8508 22.1933 18.6467C21.0089 17.4392 19.6059 16.4764 18.0617 15.8116C18.0478 15.8045 18.034 15.801 18.0202 15.794C20.1742 14.2111 21.5744 11.6327 21.5744 8.72362C21.5744 3.90452 17.7367 0 13 0C8.26333 0 4.42559 3.90452 4.42559 8.72362C4.42559 11.6327 5.82585 14.2111 7.97982 15.7975C7.96599 15.8045 7.95216 15.808 7.93833 15.8151C6.38941 16.4799 4.99952 17.4332 3.80671 18.6503C2.61981 19.8553 1.67349 21.2827 1.02003 22.8538C0.37806 24.3918 0.0318323 26.0409 8.64563e-05 27.7116C-0.000836348 27.7491 0.00563604 27.7864 0.0191224 27.8214C0.0326088 27.8564 0.0528363 27.8882 0.0786128 27.9151C0.104389 27.942 0.135194 27.9633 0.16921 27.9779C0.203227 27.9925 0.239768 28 0.27668 28H2.35113C2.50326 28 2.62427 27.8769 2.62773 27.7256C2.69688 25.01 3.76868 22.4668 5.66335 20.5392C7.62371 18.5447 10.2271 17.4472 13 17.4472C15.7729 17.4472 18.3763 18.5447 20.3367 20.5392C22.2313 22.4668 23.3031 25.01 23.3723 27.7256C23.3757 27.8804 23.4967 28 23.6489 28H25.7233C25.7602 28 25.7968 27.9925 25.8308 27.9779C25.8648 27.9633 25.8956 27.942 25.9214 27.9151C25.9472 27.8882 25.9674 27.8564 25.9809 27.8214C25.9944 27.7864 26.0008 27.7491 25.9999 27.7116C25.9653 26.0301 25.6231 24.3945 24.98 22.8503ZM13 14.7739C11.413 14.7739 9.91943 14.1442 8.79577 13.001C7.67211 11.8578 7.05323 10.3382 7.05323 8.72362C7.05323 7.10905 7.67211 5.58945 8.79577 4.44623C9.91943 3.30301 11.413 2.67337 13 2.67337C14.587 2.67337 16.0806 3.30301 17.2042 4.44623C18.3279 5.58945 18.9468 7.10905 18.9468 8.72362C18.9468 10.3382 18.3279 11.8578 17.2042 13.001C16.0806 14.1442 14.587 14.7739 13 14.7739Z"
+                fill="#A65CF0"
+              />
+            </svg>
+          </a>
+          <a class="header-bottom__link-basket" href="#!">
+            <span class="header-bottom__shopping">0</span>
+            <svg
+              class="header-bottom__svg-basket"
+              width="30"
+              height="28"
+              viewBox="0 0 30 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M28.8162 19.8503H8.90202L9.90191 17.7365L26.5154 17.7052C27.0772 17.7052 27.5588 17.2887 27.6591 16.7125L29.9599 3.34598C30.0201 2.99541 29.9298 2.63444 29.7091 2.36023C29.6 2.22528 29.4639 2.11658 29.3103 2.04166C29.1567 1.96674 28.9892 1.9274 28.8195 1.92637L7.68476 1.85348L7.50418 0.971861C7.39048 0.40957 6.90224 0 6.34712 0H1.18047C0.86739 0 0.567133 0.129087 0.345752 0.358864C0.124371 0.588641 0 0.900285 0 1.22524C0 1.55019 0.124371 1.86184 0.345752 2.09161C0.567133 2.32139 0.86739 2.45048 1.18047 2.45048H5.3907L6.17991 6.34486L8.12284 16.1086L5.62145 20.3466C5.49155 20.5286 5.4133 20.7446 5.39557 20.9704C5.37784 21.1961 5.42134 21.4225 5.52112 21.6239C5.72177 22.0369 6.12641 22.2973 6.57452 22.2973H8.67462C8.2269 22.9145 7.98508 23.6662 7.98573 24.4388C7.98573 26.4034 9.52402 28 11.4168 28C13.3096 28 14.8478 26.4034 14.8478 24.4388C14.8478 23.6648 14.6004 22.9116 14.159 22.2973H19.5463C19.0986 22.9145 18.8568 23.6662 18.8574 24.4388C18.8574 26.4034 20.3957 28 22.2885 28C24.1812 28 25.7195 26.4034 25.7195 24.4388C25.7195 23.6648 25.4721 22.9116 25.0307 22.2973H28.8195C29.4683 22.2973 30 21.7489 30 21.072C29.9981 20.7474 29.8725 20.4368 29.6507 20.2079C29.4289 19.979 29.1289 19.8504 28.8162 19.8503ZM8.17635 4.26925L27.4317 4.33519L25.5456 15.2964L10.4202 15.3242L8.17635 4.26925ZM11.4168 25.5356C10.8349 25.5356 10.36 25.0428 10.36 24.4388C10.36 23.8349 10.8349 23.342 11.4168 23.342C11.9987 23.342 12.4735 23.8349 12.4735 24.4388C12.4735 24.7297 12.3622 25.0087 12.164 25.2144C11.9658 25.4201 11.6971 25.5356 11.4168 25.5356ZM22.2885 25.5356C21.7066 25.5356 21.2317 25.0428 21.2317 24.4388C21.2317 23.8349 21.7066 23.342 22.2885 23.342C22.8704 23.342 23.3452 23.8349 23.3452 24.4388C23.3452 24.7297 23.2339 25.0087 23.0357 25.2144C22.8375 25.4201 22.5687 25.5356 22.2885 25.5356Z"
+                fill="#A65CF0"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="header__center header-center line-3">
+        <button
+          class="header__burger burger"
+          id="burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <a
+          class="header-center__logo-link"
+          href="./index.html"
+          aria-label="Перейти на главную страницу сайта"
+          data-da=".line-1,650,first"
+        >
+          <img
+            class="header-center__logo-img"
+            src="./img/logo.svg"
+            alt="Логотип"
+          />
+        </a>
+        <nav class="header-center__nav" id="burger-menu">
+          <div class="header-center__nav-container">
+            <ul class="header-center__list">
+              <li class="header-center__item">
+                <a class="header-center__link" href="./catalog.html">Каталог</a>
+              </li>
+              <li class="header-center__item">
+                <a class="header-center__link" href="#!">Магазины</a>
+              </li>
+              <li class="header-center__item">
+                <a class="header-center__link" href="#!">Шоу-рум</a>
+              </li>
+              <li class="header-center__item">
+                <a class="header-center__link" href="#!"
+                  >Доставка и&nbsp;оплата</a
+                >
+              </li>
+              <li class="header-center__item">
+                <a class="header-center__link" href="#!">Дисконт</a>
+              </li>
+              <li class="header-center__item">
+                <a class="header-center__link" href="#!">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header__bottom header-bottom line-4">
+        <form class="header-bottom__form" action="#" id="header-search-form">
+          <svg
+            class="header-bottom__svg-search"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.8187 14.0625L12.607 11.3156C13.5516 10.0945 14.0625 8.60156 14.0625 7.03125C14.0625 5.15156 13.3289 3.38906 12.0023 2.06016C10.6758 0.73125 8.90859 0 7.03125 0C5.15391 0 3.38672 0.733594 2.06016 2.06016C0.73125 3.38672 0 5.15156 0 7.03125C0 8.90859 0.733594 10.6758 2.06016 12.0023C3.38672 13.3312 5.15156 14.0625 7.03125 14.0625C8.60156 14.0625 10.0922 13.5516 11.3133 12.6094L14.5249 15.3539C14.5428 15.3718 14.564 15.3859 14.5873 15.3956C14.6106 15.4053 14.6356 15.4102 14.6609 15.4102C14.6861 15.4102 14.7111 15.4053 14.7344 15.3956C14.7578 15.3859 14.7789 15.3718 14.7968 15.3539L15.8187 14.3344C15.8365 14.3165 15.8507 14.2953 15.8604 14.272C15.87 14.2487 15.875 14.2237 15.875 14.1984C15.875 14.1732 15.87 14.1482 15.8604 14.1249C15.8507 14.1015 15.8365 14.0803 15.8187 14.0625ZM10.7438 10.7438C9.75 11.7352 8.43281 12.2812 7.03125 12.2812C5.62969 12.2812 4.3125 11.7352 3.31875 10.7438C2.32734 9.75 1.78125 8.43281 1.78125 7.03125C1.78125 5.62969 2.32734 4.31016 3.31875 3.31875C4.3125 2.32734 5.62969 1.78125 7.03125 1.78125C8.43281 1.78125 9.75234 2.325 10.7438 3.31875C11.7352 4.3125 12.2812 5.62969 12.2812 7.03125C12.2812 8.43281 11.7352 9.75234 10.7438 10.7438Z"
+              fill="#999999"
+            />
+          </svg>
+          <input
+            class="header-bottom__input"
+            type="text"
+            placeholder="Я хочу купить..."
+            maxlength="30"
+            aria-label="Форма поиска по магазину, введите название товара"
+          />
+          <button class="header-bottom__btn" aria-label="Найти">
+            <svg
+              class="header-bottom__svg-btn"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_663_1730)">
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="15"
+                  fill="#F6F6F6"
+                  stroke="#A65CF0"
+                  stroke-width="2"
+                />
+                <path
+                  d="M14 11L19 16L14 21"
+                  stroke="#A65CF0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_663_1730">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </form>
+        <div class="header-bottom__dropdown">
+          <select class="header-bottom__select" name="category">
+            <option value="" selected>Категория</option>
+            <option value="1">Диваны</option>
+            <option value="2">Комоды</option>
+            <option value="3">Кресла</option>
+            <option value="4">Стулья</option>
+            <option value="5">Пуфы</option>
+            <option value="6">Столы</option>
+            <option value="7">Кровати</option>
+            <option value="8">Аксессуары</option>
+            <option value="9">Тумбы</option>
+          </select>
+        </div>
+        <div class="header-bottom__user" data-da=".line-3,950,last">
+          <a
+            class="header-bottom__link-user"
+            href="#!"
+            aria-label="Войти в личный кабинет"
+          >
+            <svg
+              class="header-bottom__svg-user"
+              width="26"
+              height="28"
+              viewBox="0 0 26 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.98 22.8503C24.3278 21.2785 23.3813 19.8508 22.1933 18.6467C21.0089 17.4392 19.6059 16.4764 18.0617 15.8116C18.0478 15.8045 18.034 15.801 18.0202 15.794C20.1742 14.2111 21.5744 11.6327 21.5744 8.72362C21.5744 3.90452 17.7367 0 13 0C8.26333 0 4.42559 3.90452 4.42559 8.72362C4.42559 11.6327 5.82585 14.2111 7.97982 15.7975C7.96599 15.8045 7.95216 15.808 7.93833 15.8151C6.38941 16.4799 4.99952 17.4332 3.80671 18.6503C2.61981 19.8553 1.67349 21.2827 1.02003 22.8538C0.37806 24.3918 0.0318323 26.0409 8.64563e-05 27.7116C-0.000836348 27.7491 0.00563604 27.7864 0.0191224 27.8214C0.0326088 27.8564 0.0528363 27.8882 0.0786128 27.9151C0.104389 27.942 0.135194 27.9633 0.16921 27.9779C0.203227 27.9925 0.239768 28 0.27668 28H2.35113C2.50326 28 2.62427 27.8769 2.62773 27.7256C2.69688 25.01 3.76868 22.4668 5.66335 20.5392C7.62371 18.5447 10.2271 17.4472 13 17.4472C15.7729 17.4472 18.3763 18.5447 20.3367 20.5392C22.2313 22.4668 23.3031 25.01 23.3723 27.7256C23.3757 27.8804 23.4967 28 23.6489 28H25.7233C25.7602 28 25.7968 27.9925 25.8308 27.9779C25.8648 27.9633 25.8956 27.942 25.9214 27.9151C25.9472 27.8882 25.9674 27.8564 25.9809 27.8214C25.9944 27.7864 26.0008 27.7491 25.9999 27.7116C25.9653 26.0301 25.6231 24.3945 24.98 22.8503ZM13 14.7739C11.413 14.7739 9.91943 14.1442 8.79577 13.001C7.67211 11.8578 7.05323 10.3382 7.05323 8.72362C7.05323 7.10905 7.67211 5.58945 8.79577 4.44623C9.91943 3.30301 11.413 2.67337 13 2.67337C14.587 2.67337 16.0806 3.30301 17.2042 4.44623C18.3279 5.58945 18.9468 7.10905 18.9468 8.72362C18.9468 10.3382 18.3279 11.8578 17.2042 13.001C16.0806 14.1442 14.587 14.7739 13 14.7739Z"
+                fill="#A65CF0"
+              />
+            </svg>
+          </a>
+          <a
+            class="header-bottom__link-basket"
+            href="#!"
+            aria-label="Показать корзину с товарами"
+          >
+            <span class="header-bottom__shopping">0</span>
+            <svg
+              class="header-bottom__svg-basket"
+              width="30"
+              height="28"
+              viewBox="0 0 30 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M28.8162 19.8503H8.90202L9.90191 17.7365L26.5154 17.7052C27.0772 17.7052 27.5588 17.2887 27.6591 16.7125L29.9599 3.34598C30.0201 2.99541 29.9298 2.63444 29.7091 2.36023C29.6 2.22528 29.4639 2.11658 29.3103 2.04166C29.1567 1.96674 28.9892 1.9274 28.8195 1.92637L7.68476 1.85348L7.50418 0.971861C7.39048 0.40957 6.90224 0 6.34712 0H1.18047C0.86739 0 0.567133 0.129087 0.345752 0.358864C0.124371 0.588641 0 0.900285 0 1.22524C0 1.55019 0.124371 1.86184 0.345752 2.09161C0.567133 2.32139 0.86739 2.45048 1.18047 2.45048H5.3907L6.17991 6.34486L8.12284 16.1086L5.62145 20.3466C5.49155 20.5286 5.4133 20.7446 5.39557 20.9704C5.37784 21.1961 5.42134 21.4225 5.52112 21.6239C5.72177 22.0369 6.12641 22.2973 6.57452 22.2973H8.67462C8.2269 22.9145 7.98508 23.6662 7.98573 24.4388C7.98573 26.4034 9.52402 28 11.4168 28C13.3096 28 14.8478 26.4034 14.8478 24.4388C14.8478 23.6648 14.6004 22.9116 14.159 22.2973H19.5463C19.0986 22.9145 18.8568 23.6662 18.8574 24.4388C18.8574 26.4034 20.3957 28 22.2885 28C24.1812 28 25.7195 26.4034 25.7195 24.4388C25.7195 23.6648 25.4721 22.9116 25.0307 22.2973H28.8195C29.4683 22.2973 30 21.7489 30 21.072C29.9981 20.7474 29.8725 20.4368 29.6507 20.2079C29.4289 19.979 29.1289 19.8504 28.8162 19.8503ZM8.17635 4.26925L27.4317 4.33519L25.5456 15.2964L10.4202 15.3242L8.17635 4.26925ZM11.4168 25.5356C10.8349 25.5356 10.36 25.0428 10.36 24.4388C10.36 23.8349 10.8349 23.342 11.4168 23.342C11.9987 23.342 12.4735 23.8349 12.4735 24.4388C12.4735 24.7297 12.3622 25.0087 12.164 25.2144C11.9658 25.4201 11.6971 25.5356 11.4168 25.5356ZM22.2885 25.5356C21.7066 25.5356 21.2317 25.0428 21.2317 24.4388C21.2317 23.8349 21.7066 23.342 22.2885 23.342C22.8704 23.342 23.3452 23.8349 23.3452 24.4388C23.3452 24.7297 23.2339 25.0087 23.0357 25.2144C22.8375 25.4201 22.5687 25.5356 22.2885 25.5356Z"
+                fill="#A65CF0"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="hero__swiper swiper">
+    <div class="hero__swiper-wrapper swiper-wrapper">
+      <div class="hero__swiper-slide swiper-slide">
+        <div class="hero__mobile-block">
+          <div class="hero__mobile-wrapper">
+            <picture class="hero__picture">
+              <source
+                srcset="./img/hero/banner1-320.jpg"
+                media="(max-width: 650px)"
+              />
+              <source
+                srcset="./img/hero/banner1-768.jpg"
+                media="(max-width: 950px)"
+              />
+              <source
+                srcset="./img/hero/banner1-1024.jpg"
+                media="(max-width: 1250px)"
+              />
+              <img
+                class="hero__image"
+                src="./img/hero/banner1-1920.jpg"
+                alt="Баннер1"
+              />
+            </picture>
+            <div class="container hero__container">
+              <div class="hero__content">
+                <h2 class="hero__title">
+                  Скидка&nbsp;15% на&nbsp;первую покупку
+                </h2>
+                <button
+                  class="hero__btn"
+                  data-da=".hero__mobile-container1,650,last"
+                >
+                  Получить!
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hero__mobile-container1"></div>
+        </div>
+      </div>
+      <div class="hero__swiper-slide swiper-slide">
+        <div class="hero__mobile-block">
+          <div class="hero__mobile-wrapper">
+            <picture class="hero__picture">
+              <source
+                srcset="./img/hero/banner2-320.jpg"
+                media="(max-width: 650px)"
+              />
+              <source
+                srcset="./img/hero/banner2-768.jpg"
+                media="(max-width: 950px)"
+              />
+              <source
+                srcset="./img/hero/banner2-1024.jpg"
+                media="(max-width: 1250px)"
+              />
+              <img
+                class="hero__image"
+                src="./img/hero/banner2-1920.jpg"
+                alt="Баннер2"
+              />
+            </picture>
+            <div class="container hero__container">
+              <div class="hero__content">
+                <h2 class="hero__title">1000+ аксессуаров для дома</h2>
+                <button
+                  class="hero__btn"
+                  data-da=".hero__mobile-container2,650,last"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hero__mobile-container2"></div>
+        </div>
+      </div>
+      <div class="hero__swiper-slide swiper-slide">
+        <div class="hero__mobile-block">
+          <div class="hero__mobile-wrapper">
+            <picture class="hero__picture">
+              <source
+                srcset="./img/hero/banner3-320.jpg"
+                media="(max-width: 650px)"
+              />
+              <source
+                srcset="./img/hero/banner3-768.jpg"
+                media="(max-width: 950px)"
+              />
+              <source
+                srcset="./img/hero/banner3-1024.jpg"
+                media="(max-width: 1250px)"
+              />
+              <img
+                class="hero__image"
+                src="./img/hero/banner3-1920.jpg"
+                alt="Баннер3"
+              />
+            </picture>
+            <div class="container hero__container">
+              <div class="hero__content">
+                <h2 class="hero__title hero__title--text-white">
+                  Коллекция стильного и&nbsp;яркого текстиля
+                </h2>
+                <button
+                  class="hero__btn"
+                  data-da=".hero__mobile-container3,650,last"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hero__mobile-container3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__swiper-pagination swiper-pagination"></div>
+  </div>
+</section>
+ <section class="special">
+  <div class="container">
+    <div class="special__wrapper">
+      <h2 class="special__title">Специальные предложения</h2>
+      <div class="special__swiper-btns">
+        <button class="special__swiper-button-prev swiper-button-prev">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_663_1730)">
+              <circle
+                cx="16"
+                cy="16"
+                r="15"
+                fill="white"
+                stroke="#A65CF0"
+                stroke-width="2"
+              />
+              <path
+                d="M14 11L19 16L14 21"
+                stroke="#A65CF0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_663_1730">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <button class="special__swiper-button-next swiper-button-next">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_663_1730)">
+              <circle
+                cx="16"
+                cy="16"
+                r="15"
+                fill="white"
+                stroke="#A65CF0"
+                stroke-width="2"
+              />
+              <path
+                d="M14 11L19 16L14 21"
+                stroke="#A65CF0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_663_1730">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <div class="special__swiper swiper">
+        <ul class="special__list swiper-wrapper">
+          <li class="special__item swiper-slide">
+            <span class="special__sale">-&nbsp;9&nbsp;000</span>
+            <div class="special__content-top">
+              <picture class="special__picture">
+                <img
+                  class="special__image"
+                  src="./img/special/armchair-1920.jpg"
+                  alt="Изображение"
+                />
+              </picture>
+            </div>
+            <div class="special__content-bottom">
+              <div class="special__name">
+                <h3 class="special__title-name">Кресло велюровое</h3>
+                <span class="special__model">"X-24"</span>
+              </div>
+              <div class="special__price">
+                <span class="special__new-price">15&nbsp;990 руб</span>
+                <span class="special__old-price">24&nbsp;990 руб</span>
+              </div>
+              <button class="special__btn btn">Купить</button>
+            </div>
+          </li>
+
+          <li class="special__item swiper-slide">
+            <span class="special__sale">-&nbsp;10&nbsp;000</span>
+            <div class="special__content-top">
+              <picture class="special__picture">
+                <source
+                  srcset="./img/special/sofa1-1024.jpg"
+                  media="(max-width: 1250px)"
+                />
+                <img
+                  class="special__image"
+                  src="./img/special/sofa1-1920.jpg"
+                  alt="Изображение"
+                />
+              </picture>
+            </div>
+            <div class="special__content-bottom">
+              <div class="special__name">
+                <h3 class="special__title-name">Диван тканевый</h3>
+                <span class="special__model">"Z-44"</span>
+              </div>
+              <div class="special__price">
+                <span class="special__new-price">22&nbsp;990 руб</span>
+                <span class="special__old-price">32&nbsp;990 руб</span>
+              </div>
+              <button class="special__btn btn">Купить</button>
+            </div>
+          </li>
+
+          <li class="special__item swiper-slide">
+            <span class="special__sale">-&nbsp;600</span>
+            <div class="special__content-top">
+              <picture class="special__picture">
+                <img
+                  class="special__image"
+                  src="./img/special/clock-1920.png"
+                  alt="Изображение"
+                />
+              </picture>
+            </div>
+            <div class="special__content-bottom">
+              <div class="special__name">
+                <h3 class="special__title-name">Будильник</h3>
+                <span class="special__model">"Quartz-23"</span>
+              </div>
+              <div class="special__price">
+                <span class="special__new-price">1&nbsp;290 руб</span>
+                <span class="special__old-price">1&nbsp;890 руб</span>
+              </div>
+              <button class="special__btn btn">Купить</button>
+            </div>
+          </li>
+
+          <li class="special__item swiper-slide">
+            <span class="special__sale">-&nbsp;300</span>
+            <div class="special__content-top">
+              <picture class="special__picture">
+                <img
+                  class="special__image"
+                  src="./img/special/deer-1920.png"
+                  alt="Изображение"
+                />
+              </picture>
+            </div>
+            <div class="special__content-bottom">
+              <div class="special__name">
+                <h3 class="special__title-name">Мини-скульптура</h3>
+                <span class="special__model">"Oh&nbsp;my&nbsp;deer"</span>
+              </div>
+              <div class="special__price">
+                <span class="special__new-price">690 руб</span>
+                <span class="special__old-price">990 руб</span>
+              </div>
+              <button class="special__btn btn">Купить</button>
+            </div>
+          </li>
+
+          <li class="special__item swiper-slide">
+            <span class="special__sale">-&nbsp;10&nbsp;000</span>
+            <div class="special__content-top">
+              <picture class="special__picture">
+                <img
+                  class="special__image"
+                  src="./img/special/sofa2-1920.jpg"
+                  alt="Изображение"
+                />
+              </picture>
+            </div>
+            <div class="special__content-bottom">
+              <div class="special__name">
+                <h3 class="special__title-name">Диван вел-флок</h3>
+                <span class="special__model">"Z-85"</span>
+              </div>
+              <div class="special__price">
+                <span class="special__new-price">22&nbsp;990 руб</span>
+                <span class="special__old-price">32&nbsp;990 руб</span>
+              </div>
+              <button class="special__btn btn">Купить</button>
+            </div>
+          </li>
+
+          <li class="special__item swiper-slide">
+            <span class="special__sale">-&nbsp;700</span>
+            <div class="special__content-top">
+              <picture class="special__picture">
+                <img
+                  class="special__image"
+                  src="./img/special/hydrometer-1920.jpg"
+                  alt="Изображение"
+                />
+              </picture>
+            </div>
+            <div class="special__content-bottom">
+              <div class="special__name">
+                <h3 class="special__title-name">Термометр + гидрометр</h3>
+                <span class="special__model">"H-18"</span>
+              </div>
+              <div class="special__price">
+                <span class="special__new-price">1&nbsp;390 руб</span>
+                <span class="special__old-price">2&nbsp;090 руб</span>
+              </div>
+              <button class="special__btn btn">Купить</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="rating">
+  <div class="container">
+    <h2 class="rating__title">Высокий рейтинг</h2>
+    <div class="rating__wrapper">
+      <ul class="rating__list">
+        <li class="rating__item">
+          <span class="rating__star">5,0</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <source
+                srcset="./img/rating/r94-320.png"
+                media="(max-width: 650px)"
+              />
+              <img src="./img/rating/r94-1920.jpg" alt="Диван1" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван кожаный</h3>
+              <span class="rating__model">“R-94”</span>
+            </div>
+            <span class="rating__price">94&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item">
+          <span class="rating__star">4,9</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <source
+                srcset="./img/rating/t75-320.png"
+                media="(max-width: 650px)"
+              />
+              <img src="./img/rating/t75-1920.jpg" alt="Диван2" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван апартековый</h3>
+              <span class="rating__model">“T-75”</span>
+            </div>
+            <span class="rating__price">69&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item">
+          <span class="rating__star">4,8</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <source
+                srcset="./img/rating/d31-320.png"
+                media="(max-width: 650px)"
+              />
+              <img src="./img/rating/d31-1920.jpg" alt="Диван3" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван тканевый</h3>
+              <span class="rating__model">“D-31”</span>
+            </div>
+            <span class="rating__price">28&nbsp;490 руб</span>
+            <a class="rating__btn btn" href="./product.html">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item">
+          <span class="rating__star">4,8</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <source
+                srcset="./img/rating/y68-320.png"
+                media="(max-width: 650px)"
+              />
+              <img src="./img/rating/y68-1920.jpg" alt="Диван4" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван велюровый</h3>
+              <span class="rating__model">“Y-68”</span>
+            </div>
+            <span class="rating__price">22&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item">
+          <span class="rating__star">4,8</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <source
+                srcset="./img/rating/w95-320.png"
+                media="(max-width: 650px)"
+              />
+              <img src="./img/rating/w95-1920.jpg" alt="Диван5" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван из&nbsp;шинила</h3>
+              <span class="rating__model">“W-95”</span>
+            </div>
+            <span class="rating__price">22&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item">
+          <span class="rating__star">4,8</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <source
+                srcset="./img/rating/g41-320.png"
+                media="(max-width: 650px)"
+              />
+              <img src="./img/rating/g41-1920.jpg" alt="Диван6" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван флоковый</h3>
+              <span class="rating__model">“G-41”</span>
+            </div>
+            <span class="rating__price">17&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item">
+          <span class="rating__star">4,8</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <img src="./img/rating/v43-1920.jpg" alt="Диван7" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван шиниловый</h3>
+              <span class="rating__model">“V-43”</span>
+            </div>
+            <span class="rating__price">19&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item">
+          <span class="rating__star">4,7</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <img src="./img/rating/s99-1920.jpg" alt="Диван8" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван велюровый</h3>
+              <span class="rating__model">“S-99”</span>
+            </div>
+            <span class="rating__price">19&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item rating__hidden-card">
+          <span class="rating__star">4,7</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <source
+                srcset="./img/rating/f85-320.png"
+                media="(max-width: 650px)"
+              />
+              <img src="./img/rating/f85-1920.jpg" alt="Диван9" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван из кожзама</h3>
+              <span class="rating__model">“F-85”</span>
+            </div>
+            <span class="rating__price">26&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item rating__hidden-card">
+          <span class="rating__star">4,6</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <source
+                srcset="./img/rating/h64-320.png"
+                media="(max-width: 650px)"
+              />
+              <img src="./img/rating/h64-1920.jpg" alt="Диван10" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван флоковый</h3>
+              <span class="rating__model">“H-64”</span>
+            </div>
+            <span class="rating__price">25&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item rating__hidden-card">
+          <span class="rating__star">4,6</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <source
+                srcset="./img/rating/h58-320.png"
+                media="(max-width: 650px)"
+              />
+              <img src="./img/rating/h58-1920.jpg" alt="Диван11" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван флоковый</h3>
+              <span class="rating__model">“H-58”</span>
+            </div>
+            <span class="rating__price">23&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+
+        <li class="rating__item rating__hidden-card">
+          <span class="rating__star">4,6</span>
+          <div class="rating__content-top">
+            <picture class="rating__picture">
+              <source
+                srcset="./img/rating/r43-320.png"
+                media="(max-width: 650px)"
+              />
+              <img src="./img/rating/r43-1920.jpg" alt="Диван12" />
+            </picture>
+          </div>
+          <div class="rating__content-bottom">
+            <div class="rating__name">
+              <h3 class="rating__title-name">Диван из кожзама</h3>
+              <span class="rating__model">“R-43”</span>
+            </div>
+            <span class="rating__price">33&nbsp;990 руб</span>
+            <a class="rating__btn btn" href="#!">Купить</a>
+          </div>
+        </li>
+      </ul>
+      <button class="rating__btn-more" aria-expanded="false">
+        Смотреть больше товаров
+      </button>
+    </div>
+  </div>
+</section>
+ <section class="oxford">
+  <div class="oxford__wrapper">
+    <div class="container oxford__container">
+      <div class="oxford__content">
+        <h2 class="oxford__title">Оксфорд 1950</h2>
+        <p class="oxford__descr">Новая коллекция изысканных кресел</p>
+        <button
+          class="oxford__btn"
+          data-da=".oxford__mobile-container,650,first"
+        >
+          Ознакомиться
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="oxford__mobile-container"></div>
+</section>
+
+      <section class="categories">
+  <div class="container">
+    <h2 class="categories__title">Топ категории</h2>
+    <ul class="categories__list">
+      <li class="categories__item categories-card card-1">
+        <ul class="categories-card__list">
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Прямые</a>
+          </li>
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Угловые</a>
+          </li>
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Модульные</a>
+          </li>
+        </ul>
+        <h3 class="categories-card__title title-mobile1">Диваны</h3>
+        <picture class="categories-card__picture">
+          <source
+            srcset="./img/categories/sofa-320.png"
+            media="(max-width: 650px)"
+          />
+          <img
+            class="categories-card__image"
+            src="./img/categories/sofa-1920.jpg"
+            alt="Диваны"
+          />
+        </picture>
+        <a
+          class="categories-card__link-catalog"
+          data-da=".title-mobile1,650,last"
+          href="./catalog.html"
+        >
+          <span class="categories-card__descr-link">В каталог</span>
+          <svg
+            class="categories-card__svg-link"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_663_1822)">
+              <circle
+                cx="11"
+                cy="11"
+                r="10"
+                fill="#white"
+                stroke="#A65CF0"
+                stroke-width="2"
+              />
+              <path
+                d="M9.625 7.5625L13.0625 11L9.625 14.4375"
+                stroke="#A65CF0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_663_1822">
+                <rect width="22" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </li>
+
+      <li class="categories__item categories-card card-2">
+        <ul class="categories-card__list">
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Мягкие</a>
+          </li>
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Кресла-кровати</a>
+          </li>
+        </ul>
+        <h3 class="categories-card__title title-mobile2">Кресла</h3>
+        <picture class="categories-card__picture">
+          <source
+            srcset="./img/categories/armchair-320.jpg"
+            media="(max-width: 650px)"
+          />
+          <source
+            srcset="./img/categories/armchair-1024.png"
+            media="(max-width: 1250px)"
+          />
+          <img
+            class="categories-card__image"
+            src="./img/categories/armchair-1920.jpg"
+            alt="Кресла"
+          />
+        </picture>
+        <a
+          class="categories-card__link-catalog"
+          data-da=".title-mobile2,650,last"
+          href="./catalog.html"
+        >
+          <span class="categories-card__descr-link">В каталог</span>
+          <svg
+            class="categories-card__svg-link"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_663_1822)">
+              <circle
+                cx="11"
+                cy="11"
+                r="10"
+                fill="#white"
+                stroke="#A65CF0"
+                stroke-width="2"
+              />
+              <path
+                d="M9.625 7.5625L13.0625 11L9.625 14.4375"
+                stroke="#A65CF0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_663_1822">
+                <rect width="22" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </li>
+
+      <li class="categories__item categories-card card-3">
+        <ul class="categories-card__list">
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Односпальные</a>
+          </li>
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Двуспальные</a>
+          </li>
+        </ul>
+        <h3 class="categories-card__title title-mobile3">Кровати</h3>
+        <picture class="categories-card__picture">
+          <source
+            srcset="./img/categories/bed-320.jpg"
+            media="(max-width: 650px)"
+          />
+          <source
+            srcset="./img/categories/bed-1024.jpg"
+            media="(max-width: 1250px)"
+          />
+          <img
+            class="categories-card__image"
+            src="./img/categories/bed-1920.jpg"
+            alt="Кровати"
+          />
+        </picture>
+        <a
+          class="categories-card__link-catalog"
+          data-da=".title-mobile3,650,last"
+          href="./catalog.html"
+        >
+          <span class="categories-card__descr-link">В каталог</span>
+          <svg
+            class="categories-card__svg-link"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_663_1822)">
+              <circle
+                cx="11"
+                cy="11"
+                r="10"
+                fill="#white"
+                stroke="#A65CF0"
+                stroke-width="2"
+              />
+              <path
+                d="M9.625 7.5625L13.0625 11L9.625 14.4375"
+                stroke="#A65CF0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_663_1822">
+                <rect width="22" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </li>
+
+      <li class="categories__item categories-card card-4">
+        <ul class="categories-card__list">
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Тумбы</a>
+          </li>
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Комоды</a>
+          </li>
+        </ul>
+        <h3 class="categories-card__title title-mobile4">
+          Тумбы и&nbsp;комоды
+        </h3>
+        <picture class="categories-card__picture">
+          <source
+            srcset="./img/categories/dresser-320.jpg"
+            media="(max-width: 650px)"
+          />
+          <source
+            srcset="./img/categories/dresser-1024.jpg"
+            media="(max-width: 1250px)"
+          />
+          <img
+            class="categories-card__image"
+            src="./img/categories/dresser-1920.jpg"
+            alt="Тумбы и комоды"
+          />
+        </picture>
+        <a
+          class="categories-card__link-catalog"
+          data-da=".title-mobile4,650,last"
+          href="./catalog.html"
+        >
+          <span class="categories-card__descr-link">В каталог</span>
+          <svg
+            class="categories-card__svg-link"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_663_1822)">
+              <circle
+                cx="11"
+                cy="11"
+                r="10"
+                fill="#white"
+                stroke="#A65CF0"
+                stroke-width="2"
+              />
+              <path
+                d="M9.625 7.5625L13.0625 11L9.625 14.4375"
+                stroke="#A65CF0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_663_1822">
+                <rect width="22" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </li>
+
+      <li class="categories__item categories-card card-5">
+        <ul class="categories-card__list">
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Деревянные</a>
+          </li>
+          <li class="categories-card__item">
+            <a class="categories-card__link-type" href="#!">Металлокаркас</a>
+          </li>
+        </ul>
+        <h3 class="categories-card__title title-mobile5">Стулья</h3>
+        <picture class="categories-card__picture">
+          <source
+            srcset="./img/categories/chair-320.jpg"
+            media="(max-width: 650px)"
+          />
+          <source
+            srcset="./img/categories/chair-1024.png"
+            media="(max-width: 1250px)"
+          />
+          <img
+            class="categories-card__image"
+            src="./img/categories/chair-1920.jpg"
+            alt="Стулья"
+          />
+        </picture>
+        <a
+          class="categories-card__link-catalog"
+          data-da=".title-mobile5,650,last"
+          href="./catalog.html"
+        >
+          <span class="categories-card__descr-link">В каталог</span>
+          <svg
+            class="categories-card__svg-link"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_663_1822)">
+              <circle
+                cx="11"
+                cy="11"
+                r="10"
+                fill="#white"
+                stroke="#A65CF0"
+                stroke-width="2"
+              />
+              <path
+                d="M9.625 7.5625L13.0625 11L9.625 14.4375"
+                stroke="#A65CF0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_663_1822">
+                <rect width="22" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+ <section class="useful">
+  <div class="container">
+    <div class="useful__wrapper">
+      <h2 class="useful__title">Полезное</h2>
+      <div class="useful__swiper-btns">
+        <button class="useful__swiper-button-prev swiper-button-prev">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_663_1730)">
+              <circle
+                cx="16"
+                cy="16"
+                r="15"
+                fill="white"
+                stroke="#A65CF0"
+                stroke-width="2"
+              />
+              <path
+                d="M14 11L19 16L14 21"
+                stroke="#A65CF0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_663_1730">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <button class="useful__swiper-button-next swiper-button-next">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_663_1730)">
+              <circle
+                cx="16"
+                cy="16"
+                r="15"
+                fill="white"
+                stroke="#A65CF0"
+                stroke-width="2"
+              />
+              <path
+                d="M14 11L19 16L14 21"
+                stroke="#A65CF0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_663_1730">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <div class="useful__swiper swiper">
+        <ul class="useful__list swiper-wrapper">
+          <li class="useful__item swiper-slide">
+            <picture class="useful__picture">
+              <img
+                class="useful__image"
+                src="./img/useful/slide1-1920.jpg"
+                alt="Изображение"
+              />
+            </picture>
+            <div class="useful__content">
+              <p class="useful__text">
+                И&nbsp;нет сомнений, что сделанные на&nbsp;базе
+                интернет-аналитики выводы представляют собой не&nbsp;что иное?
+              </p>
+              <button class="useful__btn btn">Читать</button>
+            </div>
+          </li>
+
+          <li class="useful__item swiper-slide">
+            <picture class="useful__picture">
+              <img
+                class="useful__image"
+                src="./img/useful/slide2-1920.jpg"
+                alt="Изображение"
+              />
+            </picture>
+            <div class="useful__content">
+              <p class="useful__text">
+                Как принято считать, некоторые особенности приносят несомненную
+                пользу обществу?
+              </p>
+              <button class="useful__btn btn">Читать</button>
+            </div>
+          </li>
+
+          <li class="useful__item swiper-slide">
+            <picture class="useful__picture">
+              <img
+                class="useful__image"
+                src="./img/useful/slide3-1920.jpg"
+                alt="Изображение"
+              />
+            </picture>
+            <div class="useful__content">
+              <p class="useful__text">
+                Ясность нашей позиции очевидна: укрепление и&nbsp;развитие
+                внутренней структуры?
+              </p>
+              <button class="useful__btn btn">Читать</button>
+            </div>
+          </li>
+
+          <li class="useful__item swiper-slide">
+            <picture class="useful__picture">
+              <img
+                class="useful__image"
+                src="./img/useful/slide4-1920.jpg"
+                alt="Изображение"
+              />
+            </picture>
+            <div class="useful__content">
+              <p class="useful__text">
+                Прежде всего, консультация с&nbsp;широким активом однозначно
+                фиксирует необходимость распределения?
+              </p>
+              <button class="useful__btn btn">Читать</button>
+            </div>
+          </li>
+
+          <li class="useful__item swiper-slide">
+            <picture class="useful__picture">
+              <img
+                class="useful__image"
+                src="./img/useful/slide5-1920.jpg"
+                alt="Изображение"
+              />
+            </picture>
+            <div class="useful__content">
+              <p class="useful__text">
+                Как принято считать, некоторые особенности приносят несомненную
+                пользу обществу?
+              </p>
+              <button class="useful__btn btn">Читать</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="feedback">
+  <div class="container">
+    <h2 class="feedback__title">Мы&nbsp;всегда вам рады!</h2>
+    <div class="feedback__wrapper">
+      <div class="feedback__content">
+        <div class="feedback__text">
+          Безусловно, новая модель организационной деятельности
+          в&nbsp;значительной степени обусловливает важность распределения
+          внутренних резервов и&nbsp;ресурсов.
+          <div class="feedback__tooltip feedback-tooltip">
+            <button class="feedback-tooltip__btn" aria-describedby="tooltip-1">
+              <svg
+                class="feedback-tooltip__svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="red"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="path-default"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 1.27273C3.83691 1.27273 1.27273 3.83691 1.27273 7C1.27273 10.1631 3.83691 12.7273 7 12.7273C10.1631 12.7273 12.7273 10.1631 12.7273 7C12.7273 3.83691 10.1631 1.27273 7 1.27273ZM0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7ZM7.16433 4.47002C6.86809 4.4192 6.56343 4.47487 6.3043 4.62716C6.04517 4.77946 5.8483 5.01854 5.74856 5.30208C5.63193 5.63362 5.26862 5.80784 4.93708 5.69121C4.60554 5.57458 4.43132 5.21127 4.54795 4.87973C4.74743 4.31266 5.14117 3.83449 5.65943 3.52991C6.17769 3.22532 6.78701 3.11398 7.3795 3.21561C7.97198 3.31723 8.50937 3.62527 8.8965 4.08515C9.28355 4.54494 9.49543 5.12685 9.49462 5.72785C9.49433 6.70171 8.77231 7.34484 8.2567 7.68857C7.97948 7.87339 7.70679 8.00928 7.50591 8.09856C7.40457 8.1436 7.31923 8.17778 7.25774 8.2012C7.22694 8.21294 7.20197 8.22203 7.18379 8.22849L7.16169 8.23623L7.15465 8.23864L7.15217 8.23947L7.1512 8.2398C7.15101 8.23986 7.1504 8.24007 6.94916 7.63636L7.1504 8.24007C6.81698 8.35121 6.4566 8.17101 6.34546 7.8376C6.23439 7.5044 6.41427 7.14427 6.74726 7.03287L6.75742 7.02931C6.76721 7.02583 6.78325 7.02001 6.80465 7.01186C6.84756 6.99551 6.91137 6.97003 6.98901 6.93552C7.14608 6.86571 7.35067 6.76297 7.55072 6.6296C7.98956 6.33704 8.22189 6.02581 8.22189 5.72727L8.22189 5.72632C8.22234 5.42575 8.1164 5.13473 7.92283 4.90479C7.72927 4.67485 7.46057 4.52083 7.16433 4.47002ZM7.63642 10.1818C7.63642 10.5333 7.35151 10.8182 7.00005 10.8182C6.6486 10.8182 6.36369 10.5333 6.36369 10.1818C6.36369 9.83036 6.6486 9.54545 7.00005 9.54545C7.35151 9.54545 7.63642 9.83036 7.63642 10.1818Z"
+                  fill="#FF862F"
+                />
+                <path
+                  class="path-active"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0ZM6.3043 4.62717C6.56343 4.47488 6.86809 4.41921 7.16433 4.47002C7.46057 4.52084 7.72927 4.67485 7.92283 4.90479C8.1164 5.13473 8.22234 5.42671 8.22189 5.72727C8.22189 6.02581 7.98956 6.33705 7.55072 6.62961C7.35067 6.76297 7.14608 6.86572 6.98901 6.93553C6.91137 6.97003 6.84756 6.99551 6.80465 7.01186C6.78325 7.02001 6.76721 7.02584 6.75742 7.02932L6.74726 7.03288C6.41427 7.14428 6.23439 7.5044 6.34546 7.8376C6.4566 8.17102 6.81778 8.35095 7.1512 8.23981L7.15465 8.23864L7.16169 8.23624L7.18379 8.2285C7.20197 8.22204 7.22694 8.21294 7.25774 8.20121C7.31923 8.17778 7.40457 8.1436 7.50591 8.09856C7.70679 8.00928 7.97948 7.87339 8.2567 7.68858C8.77231 7.34484 9.49433 6.70172 9.49462 5.72785C9.49543 5.12685 9.28355 4.54494 8.8965 4.08516C8.50937 3.62527 7.97198 3.31724 7.3795 3.21561C6.78701 3.11399 6.17769 3.22533 5.65943 3.52991C5.14117 3.8345 4.74743 4.31267 4.54795 4.87974C4.43132 5.21128 4.60554 5.57459 4.93708 5.69121C5.26862 5.80784 5.63193 5.63362 5.74856 5.30208C5.8483 5.01855 6.04517 4.77946 6.3043 4.62717ZM7.63642 10.1818C7.63642 10.5333 7.35151 10.8182 7.00005 10.8182C6.6486 10.8182 6.36369 10.5333 6.36369 10.1818C6.36369 9.83037 6.6486 9.54546 7.00005 9.54546C7.35151 9.54546 7.63642 9.83037 7.63642 10.1818Z"
+                  fill="#FF862F"
+                />
+              </svg>
+            </button>
+            <div class="feedback-tooltip__text" role="tooltip" id="tooltip-1">
+              Реплицированные с зарубежных источников, исследования формируют
+              глобальную сеть.
+            </div>
+          </div>
+        </div>
+        <form class="feedback__form" action="" id="feedback-form">
+          <label class="feedback__label" for="name">
+            <input
+              class="feedback__input"
+              type="text"
+              name="name"
+              id="feedback-name"
+              placeholder="Как вас зовут?"
+            />
+          </label>
+          <label class="feedback__label" for="phone">
+            <input
+              class="feedback__input"
+              type="tel"
+              name="phone"
+              id="feedback-phone"
+              placeholder="Ваш телефон"
+            />
+          </label>
+          <label class="feedback__label" for="email">
+            <input
+              class="feedback__input"
+              type="email"
+              name="email"
+              id="feedback-email"
+              placeholder="Ваш e-mail"
+            />
+          </label>
+          <button
+            class="feedback__btn"
+            data-modal-button="modal-1"
+            type="submit"
+          >
+            Отправить
+          </button>
+          <div class="feedback__checkbox-wrapper">
+            <label class="feedback__label">
+              <input
+                class="feedback__real-checkbox"
+                type="checkbox"
+                name="agreement"
+                id="feedback-agreement"
+                checked
+              />
+              <span class="feedback__custom-checkbox"></span>
+              Принимаю
+              <a class="feedback__link-agreement" href="#!"
+                >пользовательское соглашение</a
+              >
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="footer__wrapper">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__main-block footer-main">
+          <a
+            class="footer-main__logo-link"
+            href="./index.html"
+            aria-label="Перейти на главную страницу сайта"
+          >
+            <img
+              class="footer-main__logo-img"
+              src="./img/logo.svg"
+              alt="Логотип"
+            />
+          </a>
+          <ul class="footer-main__list">
+            <li class="footer-main__item">
+              <a
+                class="footer-main__social-link"
+                href="#!"
+                aria-label="Facebook"
+              >
+                <svg
+                  class="footer-main__svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 0C6.74999 0 0 6.76205 0 15.0904C0 22.6205 5.48999 28.8705 12.66 30V19.4578H8.84999V15.0904H12.66V11.762C12.66 7.98193 14.895 5.90361 18.33 5.90361C19.965 5.90361 21.675 6.18976 21.675 6.18976V9.90964H19.785C17.925 9.90964 17.34 11.0693 17.34 12.259V15.0904H21.51L20.835 19.4578H17.34V30C20.8746 29.4395 24.0933 27.6288 26.4149 24.8947C28.7364 22.1606 30.008 18.6832 30 15.0904C30 6.76205 23.25 0 15 0Z"
+                    fill="#999999"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-main__item">
+              <a
+                class="footer-main__social-link"
+                href="#!"
+                aria-label="В контакте"
+              >
+                <svg
+                  class="footer-main__svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 0C6.71601 0 0 6.7157 0 15C0 23.2843 6.71601 30 15 30C23.284 30 30 23.2843 30 15C30 6.7157 23.284 0 15 0ZM22.6088 16.6223C23.3079 17.3052 24.0476 17.9478 24.6752 18.7013C24.9532 19.0346 25.2153 19.3792 25.4148 19.7669C25.6996 20.3196 25.4425 20.9257 24.9477 20.9586L21.8747 20.958C21.081 21.0236 20.4494 20.7035 19.9169 20.1609C19.4919 19.7285 19.0975 19.2666 18.6881 18.8194C18.5208 18.6359 18.3447 18.4631 18.1347 18.3272C17.7158 18.0546 17.3518 18.1381 17.1118 18.5758C16.8672 19.0211 16.8114 19.5146 16.788 20.0102C16.7546 20.7348 16.5361 20.9242 15.809 20.9583C14.2554 21.031 12.7814 20.7953 11.4114 20.0121C10.2028 19.3212 9.26731 18.3462 8.45217 17.2423C6.86486 15.0902 5.64921 12.7283 4.55693 10.2985C4.3111 9.7513 4.49095 9.45852 5.09463 9.44716C6.0976 9.42783 7.10056 9.43028 8.10353 9.44624C8.51171 9.45268 8.78179 9.68624 8.93862 10.0714C9.48061 11.4049 10.1451 12.6737 10.9777 13.8503C11.1996 14.1637 11.4261 14.4761 11.7486 14.6974C12.1047 14.9417 12.376 14.861 12.5438 14.4635C12.6513 14.2109 12.6976 13.9409 12.7209 13.6702C12.8007 12.743 12.8102 11.8162 12.6721 10.8927C12.5862 10.3148 12.2612 9.94158 11.6851 9.83233C11.3917 9.77678 11.4347 9.66813 11.5774 9.50056C11.8251 9.21084 12.0571 9.03161 12.5208 9.03161L15.9928 9.031C16.5401 9.13841 16.6628 9.38394 16.7371 9.93514L16.7402 13.7936C16.7337 14.0069 16.8473 14.6391 17.2303 14.7787C17.5372 14.88 17.7397 14.6339 17.9233 14.4396C18.7559 13.556 19.3492 12.5131 19.8804 11.4338C20.1149 10.9577 20.3171 10.4652 20.5136 9.97166C20.6596 9.60675 20.8868 9.42721 21.2986 9.43335L24.642 9.43734C24.7406 9.43734 24.8406 9.43826 24.9382 9.45514C25.5017 9.55151 25.6561 9.79396 25.4817 10.3436C25.2074 11.2073 24.6743 11.9266 24.1531 12.6479C23.5946 13.4201 22.9989 14.1652 22.4458 14.9408C21.9376 15.6497 21.9778 16.0066 22.6088 16.6223Z"
+                    fill="#999999"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-main__item">
+              <a
+                class="footer-main__social-link"
+                href="#!"
+                aria-label="Instagram"
+              >
+                <svg
+                  class="footer-main__svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_38_39)">
+                    <path
+                      d="M12.1289 15C12.1289 16.5857 13.4143 17.8711 15 17.8711C16.5857 17.8711 17.8711 16.5857 17.8711 15C17.8711 13.4143 16.5857 12.1289 15 12.1289C13.4143 12.1289 12.1289 13.4143 12.1289 15Z"
+                      fill="#999999"
+                    />
+                    <path
+                      d="M8.28558 9.91991C8.4236 9.54591 8.64378 9.2074 8.92989 8.92953C9.20775 8.64343 9.54604 8.42325 9.92026 8.28523C10.2238 8.16736 10.6797 8.02705 11.5195 7.98883C12.4279 7.9474 12.7003 7.93848 15.0001 7.93848C17.3001 7.93848 17.5725 7.94717 18.4807 7.9886C19.3204 8.02705 19.7766 8.16736 20.0799 8.28523C20.4541 8.42325 20.7926 8.64343 21.0702 8.92953C21.3563 9.2074 21.5765 9.54568 21.7148 9.91991C21.8326 10.2234 21.9729 10.6796 22.0112 11.5193C22.0526 12.4275 22.0615 12.6999 22.0615 14.9999C22.0615 17.2997 22.0526 17.5721 22.0112 18.4805C21.9729 19.3203 21.8326 19.7762 21.7148 20.0797C21.5765 20.454 21.3566 20.7923 21.0705 21.0701C20.7926 21.3562 20.4543 21.5764 20.0801 21.7144C19.7766 21.8325 19.3204 21.9728 18.4807 22.011C17.5725 22.0525 17.3003 22.0612 15.0003 22.0612C12.7 22.0612 12.4277 22.0525 11.5197 22.011C10.6799 21.9728 10.2238 21.8325 9.92026 21.7144C9.16907 21.4247 8.57535 20.8309 8.28558 20.0797C8.16771 19.7762 8.0274 19.3203 7.98895 18.4805C7.94753 17.5721 7.93883 17.2997 7.93883 14.9999C7.93883 12.6999 7.94753 12.4275 7.98895 11.5193C8.02718 10.6796 8.16748 10.2234 8.28558 9.91991ZM15.0001 19.4226C17.4429 19.4226 19.4232 17.4426 19.4232 14.9997C19.4232 12.5569 17.4429 10.5768 15.0001 10.5768C12.5574 10.5768 10.5771 12.5569 10.5771 14.9997C10.5771 17.4426 12.5574 19.4226 15.0001 19.4226ZM10.4023 11.4356C10.9731 11.4356 11.4359 10.9728 11.4359 10.4019C11.4359 9.8311 10.9731 9.3683 10.4023 9.3683C9.83145 9.3683 9.36865 9.8311 9.36865 10.4019C9.36888 10.9728 9.83145 11.4356 10.4023 11.4356Z"
+                      fill="#999999"
+                    />
+                    <path
+                      d="M15 0C23.283 0 30 6.717 30 15C30 23.283 23.283 30 15 30C6.717 30 0 23.283 0 15C0 6.717 6.717 0 15 0ZM6.43867 18.5511C6.48033 19.468 6.62613 20.094 6.83899 20.6419C7.28645 21.7989 8.20107 22.7135 9.35806 23.161C9.90578 23.3739 10.532 23.5194 11.4487 23.5613C12.3672 23.6032 12.6606 23.6133 14.9998 23.6133C17.3392 23.6133 17.6324 23.6032 18.5511 23.5613C19.4678 23.5194 20.094 23.3739 20.6417 23.161C21.2167 22.9447 21.7371 22.6057 22.1674 22.1674C22.6055 21.7374 22.9445 21.2167 23.1608 20.6419C23.3736 20.0942 23.5194 19.468 23.5611 18.5513C23.6034 17.6326 23.6133 17.3392 23.6133 15C23.6133 12.6608 23.6034 12.3674 23.5613 11.4489C23.5197 10.532 23.3741 9.90601 23.1612 9.35806C22.9449 8.78334 22.6057 8.26263 22.1674 7.83257C21.7374 7.39426 21.2167 7.05528 20.6419 6.83899C20.094 6.62613 19.468 6.48056 18.5511 6.43867C17.6326 6.39679 17.3392 6.38672 15 6.38672C12.6608 6.38672 12.3674 6.39679 11.4489 6.4389C10.532 6.48056 9.90601 6.62613 9.35806 6.83876C8.78334 7.05505 8.26263 7.39426 7.83234 7.83257C7.39426 8.26286 7.05505 8.78334 6.83899 9.35806C6.6259 9.90601 6.48033 10.532 6.43845 11.4489C6.39656 12.3674 6.38672 12.6608 6.38672 15C6.38672 17.3392 6.39656 17.6326 6.43867 18.5511Z"
+                      fill="#999999"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_38_39">
+                      <rect
+                        width="30"
+                        height="30"
+                        fill="white"
+                        transform="matrix(-1 0 0 1 30 0)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__nav footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item footer-nav__item--column1">
+              <h3 class="footer-nav__title">О&nbsp;нас</h3>
+              <ul class="footer-nav__list-menu">
+                <li class="footer-nav__item-menu">
+                  <a class="footer-nav__link" href="#!">О&nbsp;компании</a>
+                </li>
+                <li class="footer-nav__item-menu">
+                  <a class="footer-nav__link" href="#!">Блог</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer-nav__item footer-nav__item--column2">
+              <h3 class="footer-nav__title">Услуги</h3>
+              <ul class="footer-nav__list-menu">
+                <li class="footer-nav__item-menu">
+                  <a class="footer-nav__link" href="#!">Доставка</a>
+                </li>
+                <li class="footer-nav__item-menu">
+                  <a class="footer-nav__link" href="#!"
+                    >Рассрочка и&nbsp;кредит</a
+                  >
+                </li>
+                <li class="footer-nav__item-menu">
+                  <a class="footer-nav__link" href="#!"
+                    >Сборка и&nbsp;установка</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer-nav__item footer-nav__item--column3">
+              <h3 class="footer-nav__title">Связь с&nbsp;нами</h3>
+              <ul class="footer-nav__list-menu">
+                <li class="footer-nav__item-menu">
+                  <a class="footer-nav__link" href="#!">Обратная связь</a>
+                </li>
+                <li class="footer-nav__item-menu">
+                  <a class="footer-nav__link" href="#!">Контакты</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer-nav__item footer-nav__item--column4">
+              <h3 class="footer-nav__title">Сотрудничество</h3>
+              <ul class="footer-nav__list-menu">
+                <li class="footer-nav__item-menu">
+                  <a class="footer-nav__link" href="#!">Поставщикам</a>
+                </li>
+                <li class="footer-nav__item-menu">
+                  <a class="footer-nav__link" href="#!">Оптовикам</a>
+                </li>
+                <li class="footer-nav__item-menu">
+                  <a class="footer-nav__link" href="#!">Карьера</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copyright copy">
+    <div class="container">
+      <div class="copy__container">
+        <span class="copy__span">
+          SDP<sup class="reg">&reg;</sup> 2011-2021
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+ <div class="modal --invisible" id="modal-1" data-modal>
+  <div class="modal__window">
+    <div class="modal__feedback modal-feedback">
+      <button class="modal-feedback__btn-close" data-modal-close>
+        <svg
+          class="modal-feedback__svg-close"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2.3812 0.397739L11.2581 9.03977C11.8029 9.57009 11.8029 10.4299 11.2581 10.9602L2.3812 19.6023C1.83647 20.1326 0.953281 20.1326 0.408549 19.6023C-0.136183 19.0719 -0.136183 18.2121 0.408549 17.6818L8.29914 10L0.40855 2.31819C-0.136182 1.78787 -0.136181 0.928057 0.408551 0.397739C0.953283 -0.13258 1.83647 -0.13258 2.3812 0.397739Z"
+            fill="#999999"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M17.6188 0.397739L8.74188 9.03977C8.19715 9.57009 8.19715 10.4299 8.74188 10.9602L17.6188 19.6023C18.1635 20.1326 19.0467 20.1326 19.5914 19.6023C20.1362 19.0719 20.1362 18.2121 19.5914 17.6818L11.7009 10L19.5914 2.31819C20.1362 1.78787 20.1362 0.928057 19.5914 0.397739C19.0467 -0.13258 18.1635 -0.13258 17.6188 0.397739Z"
+            fill="#999999"
+          />
+        </svg>
+      </button>
+      <picture class="modal-feedback__picture">
+        <source srcset="./img/logo-modal-320.svg" media="(max-width: 650px)" />
+        <img
+          class="modal-feedback__logo"
+          src="./img/logo-modal.svg"
+          alt="Логотип"
+        />
+      </picture>
+      <h2 class="modal-feedback__title">Спасибо, мы&nbsp;вам перезвоним!</h2>
+    </div>
+  </div>
+</div>
+
+<div class="modal --invisible" id="modal-2" data-modal>
+  <div class="modal__window">
+    <div class="modal__buy modal-buy">
+      <button class="modal-buy__btn-close" data-modal-close>
+        <svg
+          class="modal-buy__svg-close"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2.3812 0.397739L11.2581 9.03977C11.8029 9.57009 11.8029 10.4299 11.2581 10.9602L2.3812 19.6023C1.83647 20.1326 0.953281 20.1326 0.408549 19.6023C-0.136183 19.0719 -0.136183 18.2121 0.408549 17.6818L8.29914 10L0.40855 2.31819C-0.136182 1.78787 -0.136181 0.928057 0.408551 0.397739C0.953283 -0.13258 1.83647 -0.13258 2.3812 0.397739Z"
+            fill="#999999"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M17.6188 0.397739L8.74188 9.03977C8.19715 9.57009 8.19715 10.4299 8.74188 10.9602L17.6188 19.6023C18.1635 20.1326 19.0467 20.1326 19.5914 19.6023C20.1362 19.0719 20.1362 18.2121 19.5914 17.6818L11.7009 10L19.5914 2.31819C20.1362 1.78787 20.1362 0.928057 19.5914 0.397739C19.0467 -0.13258 18.1635 -0.13258 17.6188 0.397739Z"
+            fill="#999999"
+          />
+        </svg>
+      </button>
+      <h2 class="modal-buy__title">Купить в&nbsp;один клик</h2>
+      <p class="modal-buy__text">
+        Чтобы оформить заказ&nbsp;&mdash; заполните формы ниже и&nbsp;наш
+        менеджер свяжется с&nbsp;вами в&nbsp;течении часа.
+      </p>
+      <form class="modal-buy__form" action="#" id="modal-form">
+        <label class="modal-buy__label">
+          <input
+            class="modal-buy__input"
+            type="text"
+            placeholder="Как вас зовут?"
+            id="modal-name"
+          />
+        </label>
+        <label class="modal-buy__label">
+          <input
+            class="modal-buy__input"
+            type="tel"
+            placeholder="Ваш телефон"
+            id="modal-phone"
+          />
+        </label>
+        <button class="modal-buy__btn" type="submit">Отправить</button>
+        <div class="modal-buy__checkbox-wrapper">
+          <label class="modal-buy__label">
+            <input
+              class="modal-buy__real-checkbox"
+              type="checkbox"
+              id="modal-agreement"
+              checked
+            />
+            <span class="modal-buy__custom-checkbox"></span>
+            Принимаю
+            <a class="modal-buy__link-agreement" href="#!"
+              >пользовательское соглашение</a
+            >
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal --invisible" id="modal-3" data-modal>
+  <div class="modal__window">
+    <div class="container">
+      <div class="modal__product modal-product">
+        <button class="modal-product__btn-close" data-modal-close>
+          <svg
+            class="modal-product__svg-close"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.3812 0.397739L11.2581 9.03977C11.8029 9.57009 11.8029 10.4299 11.2581 10.9602L2.3812 19.6023C1.83647 20.1326 0.953281 20.1326 0.408549 19.6023C-0.136183 19.0719 -0.136183 18.2121 0.408549 17.6818L8.29914 10L0.40855 2.31819C-0.136182 1.78787 -0.136181 0.928057 0.408551 0.397739C0.953283 -0.13258 1.83647 -0.13258 2.3812 0.397739Z"
+              fill="#999999"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17.6188 0.397739L8.74188 9.03977C8.19715 9.57009 8.19715 10.4299 8.74188 10.9602L17.6188 19.6023C18.1635 20.1326 19.0467 20.1326 19.5914 19.6023C20.1362 19.0719 20.1362 18.2121 19.5914 17.6818L11.7009 10L19.5914 2.31819C20.1362 1.78787 20.1362 0.928057 19.5914 0.397739C19.0467 -0.13258 18.1635 -0.13258 17.6188 0.397739Z"
+              fill="#999999"
+            />
+          </svg>
+        </button>
+        <div class="modal-product__wrapper-top">
+          <div class="modal-product__swiper-top swiper">
+            <ul class="modal-product__swiper-top-wrapper swiper-wrapper">
+              <li class="modal-product__swiper-top-slide swiper-slide">
+                <picture class="modal-product__swiper-top-picture">
+                  <img
+                    class="modal-product__swiper-top-image"
+                    src="./img/product-modal/product1-modal-1920.png"
+                    alt="Диван1"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-top-slide swiper-slide">
+                <picture class="modal-product__swiper-top-picture">
+                  <img
+                    class="modal-product__swiper-top-image"
+                    src="./img/product-modal/product2-modal-1920.png"
+                    alt="Диван2"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-top-slide swiper-slide">
+                <picture class="modal-product__swiper-top-picture">
+                  <img
+                    class="modal-product__swiper-top-image"
+                    src="./img/product-modal/product3-modal-1920.png"
+                    alt="Диван3"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-top-slide swiper-slide">
+                <picture class="modal-product__swiper-top-picture">
+                  <img
+                    class="modal-product__swiper-top-image"
+                    src="./img/product-modal/product4-modal-1920.png"
+                    alt="Диван4"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-top-slide swiper-slide">
+                <picture class="modal-product__swiper-top-picture">
+                  <img
+                    class="modal-product__swiper-top-image"
+                    src="./img/product-modal/product5-modal-1920.png"
+                    alt="Диван5"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-product__wrapper-bottom">
+          <div thumbsSlider="" class="modal-product__swiper-bottom swiper">
+            <ul class="modal-product__swiper-bottom-wrapper swiper-wrapper">
+              <li class="modal-product__swiper-bottom-slide swiper-slide">
+                <picture class="modal-product__swiper-bottom-picture">
+                  <img
+                    class="modal-product__swiper-bottom-image"
+                    src="./img/product-modal/product1-modal-1920.png"
+                    alt="Диван1"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-bottom-slide swiper-slide">
+                <picture class="modal-product__swiper-bottom-picture">
+                  <img
+                    class="modal-product__swiper-bottom-image"
+                    src="./img/product-modal/product2-modal-1920.png"
+                    alt="Диван2"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-bottom-slide swiper-slide">
+                <picture class="modal-product__swiper-bottom-picture">
+                  <img
+                    class="modal-product__swiper-bottom-image"
+                    src="./img/product-modal/product3-modal-1920.png"
+                    alt="Диван3"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-bottom-slide swiper-slide">
+                <picture class="modal-product__swiper-bottom-picture">
+                  <img
+                    class="modal-product__swiper-bottom-image"
+                    src="./img/product-modal/product4-modal-1920.png"
+                    alt="Диван4"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-bottom-slide swiper-slide">
+                <picture class="modal-product__swiper-bottom-picture">
+                  <img
+                    class="modal-product__swiper-bottom-image"
+                    src="./img/product-modal/product5-modal-1920.png"
+                    alt="Диван5"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <button class="modal-product__swiper-button-prev swiper-button-prev">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_663_1730)">
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="15"
+                  fill="white"
+                  stroke="#A65CF0"
+                  stroke-width="2"
+                />
+                <path
+                  d="M14 11L19 16L14 21"
+                  stroke="#A65CF0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_663_1730">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button class="modal-product__swiper-button-next swiper-button-next">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_663_1730)">
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="15"
+                  fill="white"
+                  stroke="#A65CF0"
+                  stroke-width="2"
+                />
+                <path
+                  d="M14 11L19 16L14 21"
+                  stroke="#A65CF0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_663_1730">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
