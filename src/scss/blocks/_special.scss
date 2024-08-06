@@ -1,0 +1,287 @@
+.special {
+  padding-top: 69px;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    color: $color-mine-shaft;
+    font-size: 32px;
+    line-height: 100%;
+    max-width: fit-content;
+    margin-bottom: 26px;
+  }
+
+  &__item {
+    position: relative;
+    width: calc(25.5% - 32px);
+    min-height: 511px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-wild-sand;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  &__item:nth-child(2) {
+    position: relative;
+    width: calc(51.25% - 32px);
+  }
+
+  &__item:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 230px;
+    height: 107px;
+    background-image: url(../img/special/sofa1bg-1920.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__item:nth-child(5) {
+    position: relative;
+    width: calc(51.25% - 32px);
+  }
+
+  &__item:nth-child(5)::before {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 234px;
+    height: 124px;
+    background-image: url(../img/special/sofa2bg-1920.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__item:nth-child(6) &__title-name {
+    display: inline;
+  }
+
+  &__sale {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: $color-crusta;
+    clip-path: polygon(0% 0%, 75% 0%, 85% 50%, 75% 100%, 0% 100%);
+    padding: 8px 45px 8px 20px;
+    max-width: fit-content;
+  }
+
+  &__content-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 252px;
+    margin-bottom: 16px;
+  }
+
+  &__content-bottom {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__name {
+    flex-grow: 1;
+    margin-bottom: 21px;
+  }
+
+  &__title-name {
+    color: $color-mine-shaft;
+    font-size: 24px;
+    line-height: 130%;
+    max-width: fit-content;
+  }
+
+  &__model {
+    color: $color-mine-shaft;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  &__price {
+    display: flex;
+    margin-bottom: 22px;
+  }
+
+  &__new-price {
+    color: $color-crusta;
+    font-size: 18px;
+    line-height: 130%;
+    margin-right: 30px;
+    max-width: fit-content;
+  }
+
+  &__old-price {
+    color: $color-dusty-gray;
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration: line-through;
+    max-width: fit-content;
+  }
+
+  &__swiper-btns {
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 13px;
+  }
+
+  &__swiper-button-next {
+    width: 32px;
+    height: 32px;
+    position: static;
+    margin-top: 0;
+  }
+
+  &__swiper-button-next svg circle {
+    transition: fill .3s ease, stroke .3s ease;
+  }
+
+  &__swiper-button-next svg path {
+    transition: stroke .3s ease;
+  }
+
+  &__swiper-button-next:focus svg circle {
+    fill: $color-mauve;
+  }
+
+  &__swiper-button-next:focus svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-next:hover svg circle {
+    fill: $color-medium-purple;
+  }
+
+  &__swiper-button-next:hover svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-next:active svg circle {
+    fill: $color-purple-heart;
+    stroke: $color-purple-heart;
+  }
+
+  &__swiper-button-next:active svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-prev {
+    width: 32px;
+    height: 32px;
+    position: static;
+    margin-top: 0;
+    transform: rotate(180deg);
+  }
+
+  &__swiper-button-prev svg circle {
+    transition: fill .3s ease, stroke .3s ease;
+  }
+
+  &__swiper-button-prev svg path {
+    transition: stroke .3s ease;
+  }
+
+  &__swiper-button-prev:focus svg circle {
+    fill: $color-mauve;
+  }
+
+  &__swiper-button-prev:focus svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-prev:hover svg circle {
+    fill: $color-medium-purple;
+  }
+
+  &__swiper-button-prev:hover svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-prev:active svg circle {
+    fill: $color-purple-heart;
+    stroke: $color-purple-heart;
+  }
+
+  &__swiper-button-prev:active svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-prev::after {
+    content: '';
+  }
+
+  &__swiper-button-next::after {
+    content: '';
+  }
+}
+
+@media (max-width: 1250px) {
+  .special {
+    padding-top: 70px;
+
+    &__item {
+      width: calc(34.5% - 32px);
+    }
+
+    &__item:nth-child(2) {
+      width: calc(34.25% - 32px);
+      padding: 30px 0;
+    }
+
+    &__item:nth-child(2) &__content-bottom {
+      padding: 0 30px;
+    }
+
+    &__item:nth-child(2) &__picture {
+      transform: translateY(-31px);
+    }
+
+    &__item:nth-child(2)::before {
+      content: none;
+    }
+
+    &__item:nth-child(5)::before {
+      content: none;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .special {
+    &__wrapper {
+      padding-bottom: 50px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__item {
+      padding: 30px 28px;
+    }
+
+    &__content-top {
+      margin-bottom: 18px;
+    }
+
+    &__swiper-btns {
+      bottom: 0;
+      left: 50%;
+      right: auto;
+      top: auto;
+      transform: translateX(-50%);
+    }
+  }
+}

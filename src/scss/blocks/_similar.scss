@@ -1,0 +1,227 @@
+.similar {
+  padding-bottom: 70px;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    color: $color-mine-shaft;
+    font-size: 24px;
+    line-height: 130%;
+    max-width: fit-content;
+    margin-bottom: 22px;
+  }
+
+  &__swiper-btns {
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 13px;
+  }
+
+  &__swiper-button-next {
+    width: 32px;
+    height: 32px;
+    position: static;
+    margin-top: 0;
+  }
+
+  &__swiper-button-next svg circle {
+    transition: fill .3s ease, stroke .3s ease;
+  }
+
+  &__swiper-button-next svg path {
+    transition: stroke .3s ease;
+  }
+
+  &__swiper-button-next:focus svg circle {
+    fill: $color-mauve;
+  }
+
+  &__swiper-button-next:focus svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-next:hover svg circle {
+    fill: $color-medium-purple;
+  }
+
+  &__swiper-button-next:hover svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-next:active svg circle {
+    fill: $color-purple-heart;
+    stroke: $color-purple-heart;
+  }
+
+  &__swiper-button-next:active svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-prev {
+    width: 32px;
+    height: 32px;
+    position: static;
+    margin-top: 0;
+    transform: rotate(180deg);
+  }
+
+  &__swiper-button-prev svg circle {
+    transition: fill .3s ease, stroke .3s ease;
+  }
+
+  &__swiper-button-prev svg path {
+    transition: stroke .3s ease;
+  }
+
+  &__swiper-button-prev:focus svg circle {
+    fill: $color-mauve;
+  }
+
+  &__swiper-button-prev:focus svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-prev:hover svg circle {
+    fill: $color-medium-purple;
+  }
+
+  &__swiper-button-prev:hover svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-prev:active svg circle {
+    fill: $color-purple-heart;
+    stroke: $color-purple-heart;
+  }
+
+  &__swiper-button-prev:active svg path {
+    stroke: $color-white;
+  }
+
+  &__swiper-button-prev::after {
+    content: '';
+  }
+
+  &__swiper-button-next::after {
+    content: '';
+  }
+
+  .similar-card {
+    background-color: $color-wild-sand;
+    border-radius: 10px;
+
+    &__star {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      color: $color-crusta;
+      font-size: 16px;
+      line-height: 130%;
+      max-width: fit-content;
+      background-image: url(../img/icons/star.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 23px;
+    }
+
+    &__content-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      min-height: 190px;
+    }
+
+    &__content-bottom {
+      display: flex;
+      flex-direction: column;
+      padding: 16px 30px 30px 30px;
+      height: 100%;
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      margin-bottom: 23px;
+    }
+
+    &__title-name {
+      color: $color-mine-shaft;
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    &__model {
+      color: $color-mine-shaft;
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    &__price {
+      color: $color-dove-gray;
+      font-size: 16px;
+      line-height: 130%;
+      max-width: fit-content;
+      margin-bottom: 24px;
+    }
+
+    &__btn:focus {
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .similar {
+    &__wrapper {
+      padding-bottom: 48px;
+    }
+
+    &__swiper-btns {
+      top: auto;
+      bottom: 0;
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .similar-card {
+      &__content-top {
+        min-height: 96px;
+      }
+
+      &__star {
+        top: 17px;
+        left: 15px;
+        font-size: 12px;
+        padding-left: 20px;
+      }
+
+      &__content-bottom {
+        padding: 11px 15px 15px 15px;
+      }
+
+      &__name {
+        margin-bottom: 15px;
+      }
+
+      &__title-name,
+      &__model {
+        font-size: 16px;
+      }
+
+      &__price {
+        margin-bottom: 18px;
+      }
+
+      &__btn {
+        padding: 10px 24px;
+      }
+    }
+  }
+}

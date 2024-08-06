@@ -1,0 +1,124 @@
+.oxford {
+  &__wrapper {
+    background-image: url(../img/oxford/oxford-1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 600px;
+    height: 100%;
+  }
+
+  &__title {
+    color: $color-straw;
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 120%;
+    max-width: 508px;
+  }
+
+  &__descr {
+    color: $color-white;
+    font-size: 48px;
+    line-height: 120%;
+    max-width: 508px;
+    margin-bottom: 49px;
+  }
+
+  &__btn {
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid $color-medium-purple;
+    border-radius: 10px;
+    background-color: $color-medium-purple;
+    padding: 17px 30px;
+    max-width: fit-content;
+    transition: border-color .3s ease, background-color .3s ease;
+  }
+
+  &__btn:focus {
+    border-color: $color-purple-heart;
+    background-color: $color-mauve;
+  }
+
+  &__btn:hover {
+    border-color: $color-mauve;
+    background-color: $color-mauve;
+  }
+
+  &__btn:active {
+    border-color: $color-purple-heart;
+    background-color: $color-purple-heart;
+  }
+}
+
+@media (max-width: 1250px) {
+  .oxford {
+    &__wrapper {
+      background-image: url(../img/oxford/oxford-1024.jpg);
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .oxford {
+    &__wrapper {
+      background-image: url(../img/oxford/oxford-768.jpg);
+    }
+
+    &__container {
+      max-width: 726px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .oxford {
+    &__wrapper {
+      background-image: url(../img/oxford/oxford-320.jpg);
+      min-height: 210px;
+      margin-bottom: 32px;
+    }
+
+    &__container {
+      max-width: 326px;
+    }
+
+    &__content {
+      justify-content: flex-start;
+      min-height: 210px;
+      padding: 30px 0;
+    }
+
+    &__title {
+      font-size: 24px;
+      max-width: 187px;
+    }
+
+    &__descr {
+      font-size: 16px;
+      max-width: 187px;
+      margin-bottom: 0;
+    }
+
+    &__mobile-container {
+      max-width: 326px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+
+    &__btn {
+      max-width: unset;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.breadcrumb {
+  &__nav {
+    padding: 15px 0;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:last-child &__link {
+    color: $color-purple-heart;
+  }
+
+  &__item:not(:last-child)::after {
+    content: '\00a0/\00a0';
+    color: $color-dusty-gray;
+  }
+
+  &__link {
+    color: $color-dusty-gray;
+    font-size: 14px;
+    line-height: 100%;
+    position: relative;
+  }
+
+  &__link::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    background-color: $color-blue-chalk;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
+  &__link:focus-visible {
+    color: $color-purple-heart;
+    outline: none;
+  }
+
+  &__link:focus-visible::before {
+    opacity: 1;
+  }
+
+  &__link:hover {
+    color: $color-medium-purple;
+  }
+
+  &__link:active {
+    color: $color-purple-heart;
+  }
+}

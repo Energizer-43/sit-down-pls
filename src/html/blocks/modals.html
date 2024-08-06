@@ -1,0 +1,306 @@
+<div class="modal --invisible" id="modal-1" data-modal>
+  <div class="modal__window">
+    <div class="modal__feedback modal-feedback">
+      <button class="modal-feedback__btn-close" data-modal-close>
+        <svg
+          class="modal-feedback__svg-close"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2.3812 0.397739L11.2581 9.03977C11.8029 9.57009 11.8029 10.4299 11.2581 10.9602L2.3812 19.6023C1.83647 20.1326 0.953281 20.1326 0.408549 19.6023C-0.136183 19.0719 -0.136183 18.2121 0.408549 17.6818L8.29914 10L0.40855 2.31819C-0.136182 1.78787 -0.136181 0.928057 0.408551 0.397739C0.953283 -0.13258 1.83647 -0.13258 2.3812 0.397739Z"
+            fill="#999999"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M17.6188 0.397739L8.74188 9.03977C8.19715 9.57009 8.19715 10.4299 8.74188 10.9602L17.6188 19.6023C18.1635 20.1326 19.0467 20.1326 19.5914 19.6023C20.1362 19.0719 20.1362 18.2121 19.5914 17.6818L11.7009 10L19.5914 2.31819C20.1362 1.78787 20.1362 0.928057 19.5914 0.397739C19.0467 -0.13258 18.1635 -0.13258 17.6188 0.397739Z"
+            fill="#999999"
+          />
+        </svg>
+      </button>
+      <picture class="modal-feedback__picture">
+        <source srcset="./img/logo-modal-320.svg" media="(max-width: 650px)" />
+        <img
+          class="modal-feedback__logo"
+          src="./img/logo-modal.svg"
+          alt="Логотип"
+        />
+      </picture>
+      <h2 class="modal-feedback__title">Спасибо, мы&nbsp;вам перезвоним!</h2>
+    </div>
+  </div>
+</div>
+
+<div class="modal --invisible" id="modal-2" data-modal>
+  <div class="modal__window">
+    <div class="modal__buy modal-buy">
+      <button class="modal-buy__btn-close" data-modal-close>
+        <svg
+          class="modal-buy__svg-close"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2.3812 0.397739L11.2581 9.03977C11.8029 9.57009 11.8029 10.4299 11.2581 10.9602L2.3812 19.6023C1.83647 20.1326 0.953281 20.1326 0.408549 19.6023C-0.136183 19.0719 -0.136183 18.2121 0.408549 17.6818L8.29914 10L0.40855 2.31819C-0.136182 1.78787 -0.136181 0.928057 0.408551 0.397739C0.953283 -0.13258 1.83647 -0.13258 2.3812 0.397739Z"
+            fill="#999999"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M17.6188 0.397739L8.74188 9.03977C8.19715 9.57009 8.19715 10.4299 8.74188 10.9602L17.6188 19.6023C18.1635 20.1326 19.0467 20.1326 19.5914 19.6023C20.1362 19.0719 20.1362 18.2121 19.5914 17.6818L11.7009 10L19.5914 2.31819C20.1362 1.78787 20.1362 0.928057 19.5914 0.397739C19.0467 -0.13258 18.1635 -0.13258 17.6188 0.397739Z"
+            fill="#999999"
+          />
+        </svg>
+      </button>
+      <h2 class="modal-buy__title">Купить в&nbsp;один клик</h2>
+      <p class="modal-buy__text">
+        Чтобы оформить заказ&nbsp;&mdash; заполните формы ниже и&nbsp;наш
+        менеджер свяжется с&nbsp;вами в&nbsp;течении часа.
+      </p>
+      <form class="modal-buy__form" action="#" id="modal-form">
+        <label class="modal-buy__label">
+          <input
+            class="modal-buy__input"
+            type="text"
+            placeholder="Как вас зовут?"
+            id="modal-name"
+          />
+        </label>
+        <label class="modal-buy__label">
+          <input
+            class="modal-buy__input"
+            type="tel"
+            placeholder="Ваш телефон"
+            id="modal-phone"
+          />
+        </label>
+        <button class="modal-buy__btn" type="submit">Отправить</button>
+        <div class="modal-buy__checkbox-wrapper">
+          <label class="modal-buy__label">
+            <input
+              class="modal-buy__real-checkbox"
+              type="checkbox"
+              id="modal-agreement"
+              checked
+            />
+            <span class="modal-buy__custom-checkbox"></span>
+            Принимаю
+            <a class="modal-buy__link-agreement" href="#!"
+              >пользовательское соглашение</a
+            >
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal --invisible" id="modal-3" data-modal>
+  <div class="modal__window">
+    <div class="container">
+      <div class="modal__product modal-product">
+        <button class="modal-product__btn-close" data-modal-close>
+          <svg
+            class="modal-product__svg-close"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.3812 0.397739L11.2581 9.03977C11.8029 9.57009 11.8029 10.4299 11.2581 10.9602L2.3812 19.6023C1.83647 20.1326 0.953281 20.1326 0.408549 19.6023C-0.136183 19.0719 -0.136183 18.2121 0.408549 17.6818L8.29914 10L0.40855 2.31819C-0.136182 1.78787 -0.136181 0.928057 0.408551 0.397739C0.953283 -0.13258 1.83647 -0.13258 2.3812 0.397739Z"
+              fill="#999999"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17.6188 0.397739L8.74188 9.03977C8.19715 9.57009 8.19715 10.4299 8.74188 10.9602L17.6188 19.6023C18.1635 20.1326 19.0467 20.1326 19.5914 19.6023C20.1362 19.0719 20.1362 18.2121 19.5914 17.6818L11.7009 10L19.5914 2.31819C20.1362 1.78787 20.1362 0.928057 19.5914 0.397739C19.0467 -0.13258 18.1635 -0.13258 17.6188 0.397739Z"
+              fill="#999999"
+            />
+          </svg>
+        </button>
+        <div class="modal-product__wrapper-top">
+          <div class="modal-product__swiper-top swiper">
+            <ul class="modal-product__swiper-top-wrapper swiper-wrapper">
+              <li class="modal-product__swiper-top-slide swiper-slide">
+                <picture class="modal-product__swiper-top-picture">
+                  <img
+                    class="modal-product__swiper-top-image"
+                    src="./img/product-modal/product1-modal-1920.png"
+                    alt="Диван1"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-top-slide swiper-slide">
+                <picture class="modal-product__swiper-top-picture">
+                  <img
+                    class="modal-product__swiper-top-image"
+                    src="./img/product-modal/product2-modal-1920.png"
+                    alt="Диван2"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-top-slide swiper-slide">
+                <picture class="modal-product__swiper-top-picture">
+                  <img
+                    class="modal-product__swiper-top-image"
+                    src="./img/product-modal/product3-modal-1920.png"
+                    alt="Диван3"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-top-slide swiper-slide">
+                <picture class="modal-product__swiper-top-picture">
+                  <img
+                    class="modal-product__swiper-top-image"
+                    src="./img/product-modal/product4-modal-1920.png"
+                    alt="Диван4"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-top-slide swiper-slide">
+                <picture class="modal-product__swiper-top-picture">
+                  <img
+                    class="modal-product__swiper-top-image"
+                    src="./img/product-modal/product5-modal-1920.png"
+                    alt="Диван5"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-product__wrapper-bottom">
+          <div thumbsSlider="" class="modal-product__swiper-bottom swiper">
+            <ul class="modal-product__swiper-bottom-wrapper swiper-wrapper">
+              <li class="modal-product__swiper-bottom-slide swiper-slide">
+                <picture class="modal-product__swiper-bottom-picture">
+                  <img
+                    class="modal-product__swiper-bottom-image"
+                    src="./img/product-modal/product1-modal-1920.png"
+                    alt="Диван1"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-bottom-slide swiper-slide">
+                <picture class="modal-product__swiper-bottom-picture">
+                  <img
+                    class="modal-product__swiper-bottom-image"
+                    src="./img/product-modal/product2-modal-1920.png"
+                    alt="Диван2"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-bottom-slide swiper-slide">
+                <picture class="modal-product__swiper-bottom-picture">
+                  <img
+                    class="modal-product__swiper-bottom-image"
+                    src="./img/product-modal/product3-modal-1920.png"
+                    alt="Диван3"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-bottom-slide swiper-slide">
+                <picture class="modal-product__swiper-bottom-picture">
+                  <img
+                    class="modal-product__swiper-bottom-image"
+                    src="./img/product-modal/product4-modal-1920.png"
+                    alt="Диван4"
+                  />
+                </picture>
+              </li>
+              <li class="modal-product__swiper-bottom-slide swiper-slide">
+                <picture class="modal-product__swiper-bottom-picture">
+                  <img
+                    class="modal-product__swiper-bottom-image"
+                    src="./img/product-modal/product5-modal-1920.png"
+                    alt="Диван5"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <button class="modal-product__swiper-button-prev swiper-button-prev">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_663_1730)">
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="15"
+                  fill="white"
+                  stroke="#A65CF0"
+                  stroke-width="2"
+                />
+                <path
+                  d="M14 11L19 16L14 21"
+                  stroke="#A65CF0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_663_1730">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button class="modal-product__swiper-button-next swiper-button-next">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_663_1730)">
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="15"
+                  fill="white"
+                  stroke="#A65CF0"
+                  stroke-width="2"
+                />
+                <path
+                  d="M14 11L19 16L14 21"
+                  stroke="#A65CF0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_663_1730">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

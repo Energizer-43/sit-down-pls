@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local('OpenSansRegular'), local('OpenSans-Regular'),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: local('OpenSansSemiBold'), local('OpenSans-SemiBold'),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: local('OpenSansBold'), local('OpenSans-Bold'),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+  src: local('PlayfairDisplayBlack'), local('PlayfairDisplay-Black'),
+    url("../fonts/PlayfairDisplay-Black.woff2") format("woff2");
+}

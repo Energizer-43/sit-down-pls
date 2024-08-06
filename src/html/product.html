@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D-31</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/icons/favicon.png" type="image/png" />
+  </head>
+  <body>
+    @@include('./blocks/header.html')
+    <main class="main main__product">
+      <div class="breadcrumb">
+        <div class="container">
+          <nav class="breadcrumb__nav">
+            <ul class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="./index.html">Главная</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="./catalog.html">Каталог</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#!">Диваны</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#!">Прямые диваны</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#!">D-31</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      @@include('./blocks/product.html') @@include('./blocks/similar.html')
+      @@include('./blocks/footer.html') @@include('./blocks/modals.html')
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="./js/product.bundle.js"></script>
+  </body>
+</html>
